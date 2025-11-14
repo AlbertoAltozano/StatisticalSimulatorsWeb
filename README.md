@@ -294,3 +294,22 @@ git pull
 # Subir cambios a GitHub
 git push
 ```
+
+
+## 🌍 Hosting al mundo
+
+Este repositorio está diseñado para ser automáticamente hosteado como un sitio web estático, sin necesidad de un servidor que ejecute R. 
+
+Es decir, este repositorio ya te sirve como app ya compilada en WebAssembly funciona igual que un HTML normal. Solo queda hacerla accesible al mundo, dandole un dominio.
+
+Para publicar tu web:
+
+1. Ve a tu servicio de hosting de webs estáticas favorito (GitHub Pages, Netlify, Plesk, etc.).
+
+2. Añade este repositorio como fuente de archivos.
+
+3. Configura la rama a publicar (por ejemplo main).
+
+Una vez publicado, tu sitio web estará disponible públicamente y podrás compartir tu app.
+
+Ahora, cualquier persona podrá acceder a tus simuladores desde un navegador sin necesidad de instalar R ni dependencias adicionales.
