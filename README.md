@@ -17,7 +17,9 @@ Los siguientes programas deben estar instalados:
 - **Quarto** 
   https://quarto.org/docs/download/  
 - **R 4.5.x**  
-  https://cran.r-project.org/bin/windows/base/  
+  https://cran.r-project.org/bin/windows/base/
+- **R Tools >=4.5**
+  https://cran.r-project.org/bin/windows/Rtools/ 
 - **RStudio**
 
 ---
