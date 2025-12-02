@@ -92,7 +92,7 @@ install.packages(c("shinylive", "S7", "munsell", "shiny"))
 
 *Tip: You can develop standard Shiny code here. Use Run App in RStudio to test logic interactively.*
 
-# 🌐 Compilating your Simulator and WebAssembly Export
+## 🌐 Compiling your Simulator and WebAssembly Export
 
 To integrate the simulator into the static website, it must be compiled from R to WebAssembly using `shinylive`.
 
