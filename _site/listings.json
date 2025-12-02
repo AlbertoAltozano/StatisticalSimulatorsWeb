@@ -1,40 +1,30 @@
 [
   {
-    "listing": "/categorias/investigacion-operativa.html",
-    "items": [
-      "/simuladores/metodografico/index.html"
-    ]
-  },
-  {
-    "listing": "/categorias/estadistica-descriptiva.html",
-    "items": []
-  },
-  {
-    "listing": "/categorias/distribuciones.html",
-    "items": [
-      "/simuladores/distribuciones/index.html"
-    ]
-  },
-  {
-    "listing": "/categorias/econometria.html",
-    "items": []
-  },
-  {
-    "listing": "/categorias/estadistica-inferencial.html",
-    "items": [
-      "/simuladores/ANOVA/index.html",
-      "/simuladores/errores/index.html",
-      "/simuladores/template/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
-      "/simuladores/distribuciones/index.html",
-      "/simuladores/ANOVA/index.html",
-      "/simuladores/errores/index.html",
-      "/simuladores/template/index.html",
-      "/simuladores/metodografico/index.html"
+      "/StatisticalSimulators/ANOVA/index.html"
     ]
+  },
+  {
+    "listing": "/categories/estadistica-inferencial.html",
+    "items": [
+      "/StatisticalSimulators/ANOVA/index.html"
+    ]
+  },
+  {
+    "listing": "/categories/econometria.html",
+    "items": []
+  },
+  {
+    "listing": "/categories/distribuciones.html",
+    "items": []
+  },
+  {
+    "listing": "/categories/estadistica-descriptiva.html",
+    "items": []
+  },
+  {
+    "listing": "/categories/investigacion-operativa.html",
+    "items": []
   }
 ]

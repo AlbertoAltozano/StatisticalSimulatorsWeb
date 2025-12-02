@@ -1,0 +1,14 @@
+---
+title: "Estadística descriptiva"
+page-layout: full
+listing:
+  contents: ../StatisticalSimulators/**/*.qmd
+  type: grid
+  include:
+    categories: "Estadística descriptiva"
+  sort: "date desc"
+  grid-columns: 3
+  image-placeholder: ../assets/placeholder.png
+  categories: numbered     # muestra el widget de categorías a la derecha
+  filter-ui: true          # cuadro de búsqueda en la listing
+---

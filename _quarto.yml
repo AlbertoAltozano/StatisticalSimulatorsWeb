@@ -12,15 +12,15 @@ website:
       - text: Simuladores
         menu:
           - text: Estadística descriptiva
-            href: categorias/estadistica-descriptiva.qmd
+            href: categories/estadistica-descriptiva.qmd
           - text: Distribuciones
-            href: categorias/distribuciones.qmd
+            href: categories/distribuciones.qmd
           - text: Estadística inferencial
-            href: categorias/estadistica-inferencial.qmd
+            href: categories/estadistica-inferencial.qmd
           - text: Econometría
-            href: categorias/econometria.qmd
+            href: categories/econometria.qmd
           - text: Investigación operativa
-            href: categorias/investigacion-operativa.qmd
+            href: categories/investigacion-operativa.qmd
 
 format:
   html:

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-02">
+<meta name="description" content="Explora el cálculo de un ANOVA de 1 factor.">
 
-<title>About – STATIO</title>
+<title>ANOVA – STATIO</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-051849a2a1e0f68eed7367b8dc269a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-051849a2a1e0f68eed7367b8dc269a5d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">STATIO</span>
     </a>
   </div>
@@ -91,11 +93,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -104,23 +106,23 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-simuladores">    
         <li>
-    <a class="dropdown-item" href="./categories/estadistica-descriptiva.html">
+    <a class="dropdown-item" href="../../categories/estadistica-descriptiva.html">
  <span class="dropdown-text">Estadística descriptiva</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./categories/distribuciones.html">
+    <a class="dropdown-item" href="../../categories/distribuciones.html">
  <span class="dropdown-text">Distribuciones</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./categories/estadistica-inferencial.html">
+    <a class="dropdown-item" href="../../categories/estadistica-inferencial.html">
  <span class="dropdown-text">Estadística inferencial</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./categories/econometria.html">
+    <a class="dropdown-item" href="../../categories/econometria.html">
  <span class="dropdown-text">Econometría</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./categories/investigacion-operativa.html">
+    <a class="dropdown-item" href="../../categories/investigacion-operativa.html">
  <span class="dropdown-text">Investigación operativa</span></a>
   </li>  
     </ul>
@@ -136,28 +138,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#participantes" id="toc-participantes" class="nav-link active" data-scroll-target="#participantes">Participantes</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
+<h1 class="title">ANOVA</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Estadística inferencial</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Explora el cálculo de un ANOVA de 1 factor.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 2, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -167,31 +177,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Statio está desarrollado en el marco del proyecto “Desarrollo y validación de simuladores virtuales para fomentar el aprendizaje activo en el ámbito de la estadística y la investigación operativa”, impulsado por el Departamento de Estadística e Investigación Operativa Aplicadas y Calidad (<a href="https://www.upv.es/entidades/DEIO/"><strong>DEIOAC</strong></a>) de la Universitat Politècnica de València (<a href="https://www.upv.es/"><strong>UPV</strong></a>). Está financiado por el Instituto de Ciencias de la Educación (<a href="https://www.upv.es/entidades/ice/"><strong>ICE</strong></a>) mediate la convocatoria de Proyectos de Innovación y Mejora Educativa 2025 (PIME/25-26/562).</p>
-<section id="participantes" class="level2">
-<h2 class="anchored" data-anchor-id="participantes">Participantes</h2>
-<ul>
-<li><a href="https://www.upv.es/ficha-personal/jamarmo" target="_blank" rel="noopener">Javier Marín Morales (Coordinador)</a>
-<ul>
-<li>Contacto: jamarmo@upv.es</li>
-</ul></li>
-<li><a href="https://www.upv.es/ficha-personal/aaltfer" target="_blank" rel="noopener">Alberto Altozano Fernandez</a></li>
-<li><a href="https://www.upv.es/ficha-personal/vchirive" target="_blank" rel="noopener">Vicente Chirivella González</a></li>
-<li><a href="https://www.upv.es/ficha-personal/adcogra" target="_blank" rel="noopener">Adrian Colomer Granero</a></li>
-<li><a href="https://www.upv.es/ficha-personal/fcrespo" target="_blank" rel="noopener">Fortunato Crespo Abril</a></li>
-<li><a href="https://www.upv.es/ficha-personal/andeau" target="_blank" rel="noopener">Ana Maria Debon Aucejo</a></li>
-<li><a href="https://www.upv.es/ficha-personal/jdomaje" target="_blank" rel="noopener">Julia Domingo Ajenjo</a></li>
-<li><a href="https://www.upv.es/ficha-personal/vigibos" target="_blank" rel="noopener">Vicent Giner Bosch</a></li>
-<li><a href="https://www.upv.es/ficha-personal/daherma" target="_blank" rel="noopener">David Hervas Marin</a></li>
-<li><a href="https://www.upv.es/ficha-personal/maloral" target="_blank" rel="noopener">María Lorduy Alós</a></li>
-<li><a href="https://www.upv.es/ficha-personal/jmarmin" target="_blank" rel="noopener">Joaquin Martinez Minaya</a></li>
-<li><a href="https://www.upv.es/ficha-personal/jonacer" target="_blank" rel="noopener">José Ramón Navarro Cerdan</a></li>
-<li><a href="https://www.upv.es/ficha-personal/FRASANSA" target="_blank" rel="noopener">Francisco Sanchez Saez</a></li>
-<li><a href="https://www.upv.es/ficha-personal/mazarcas" target="_blank" rel="noopener">Manuel Zarzo Castelló</a></li>
-</ul>
+<div style="height: calc(80vh - 250px);">
+<iframe src="https://virtualpatients.webs.upv.es/StatisticalSimulators/ANOVA/appsite" title="ANOVA Unifactorial App" style="position: absolute; top: 250; left: 0; width: 100%; height: 80%; border: 0;" loading="lazy">
+</iframe>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
