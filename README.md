@@ -1,315 +1,179 @@
-# Repositorio Página Web de Simuladores de Estadística en R de DEIOAC 
+# DEIOAC Statistics Simulators Website
 
-Este repositorio almacena el contenido de la página web de simuladores estadísticos, mientras que además, sirve como template para el desarrollo de nuevos simuladores.
+**Welcome to the home of the DEIOAC/STATIO statistics simulators website**.
 
-Este repositorio de ha creado en en R usando **Shiny**, compilación a **ShinyLive (WebAssembly)** y su integración en un documento estilo **Quarto**.
+This repository hosts the source code and development environment for the website that holds the interactive statistical simulators available to the public. It represents a modern, serverless approach to statistical education tools.
 
-Cada simulador vive en su propia carpeta dentro de `simuladores/`.
+## 🏗 Architecture & CI/CD
 
----
+This repository acts as the central hub for the website and CI/CD engine. Its primary purpose is to aggregate simulator modules, compile them, and deploy the full static website.
 
-## 🧰 Requisitos
+The Container (Quarto): The website structure, navigation, and layout are built using Quarto.
 
-Los siguientes programas deben estar instalados:
+The Content (Shiny & WebAssembly): The simulators are developed in R using shiny. Instead of relying on a backend server, we utilize ShinyLive to compile these apps into WebAssembly. This allows the R code to execute entirely within the client's browser.
 
-- **Git** 
-  https://docs.github.com/en/get-started/git-basics/set-up-git  
-- **Quarto** 
-  https://quarto.org/docs/download/  
-- **R 4.5.x**  
-  https://cran.r-project.org/bin/windows/base/  
-- **RStudio**
+The Deployment: Pushing to this repository triggers web hosting service to automatically pull this repository, updating the web and enabling CI/CD.
 
----
+------------------------------------------------------------------------
 
-## 🚀 Crear un nuevo proyecto desde GitHub
+## 🧰 Prerequisites
 
-1. Abrir RStudio → **File → New Project → Version Control**  
+To contribute to the website structure or integrate new simulators, ensure you have the following installed:
 
-2. Si Git está correctamente instalado, aparecerá la opción *Git*.
-<img width="546" height="392" alt="git_r" src="https://github.com/user-attachments/assets/61d6cc43-e26d-4213-8407-234fba6056e3" />
+-   **Git:** https://docs.github.com/en/get-started/git-basics/set-up-git\
+-   **Quarto:** https://quarto.org/docs/download/\
+-   **R 4.5.x:** https://cran.r-project.org/bin/windows/base/
+-   **R Tools \>=4.5:** https://cran.r-project.org/bin/windows/Rtools/
+-   **RStudio** (Recommended IDE)
 
+------------------------------------------------------------------------
 
-3. En **Repository URL**, introducir la dirección de este repositorio:
+## 🚀 Host this Project
 
-```
-https://github.com/AlbertoAltozano/SimuladoresEstadistica
-```
+To host a similar web-based project to the one shown here, users should:
 
-4. Elegir el nombre de la carpeta que queremos crear para el proyecto (**Project Directory Name**) y su ubicación (**Browse…**).
+0.  Fork this repository
 
-Tras crearse, el proyecto tendrá una estructura similar a esta:  
-```
-.
-|-- styles.css
-|-- _quarto.yml
-|-- about.qmd
-|-- index.qmd
-|-- renv.lock
-|-- ...etc
-|
-|-- _site/
-|-- categorias/
-|-- renv/
-|-- simuladores/
-```
+1.  Open RStudio and go to **File → New Project → Version Control.**
 
+2.  Select *Git*. <img src="https://github.com/user-attachments/assets/61d6cc43-e26d-4213-8407-234fba6056e3" alt="git_r" width="546" height="392"/>
 
-## 📂 Estructura del proyecto
+3.  Copy the forked **Repository URL.**
 
-### Archivos `.qmd`
-Son archivos de **Quarto**, usados para generar la web estilo blog.
+4.  Choose your local directory and click Create Project.
 
-- `index.qmd` → página principal  
-- `about.qmd` → información general
-  
-### Carpetas importantes
+### 📂 Repository Structure
 
-- **`_site/`**  
-  Sitio web renderizado por Quarto. *No editar aquí.*
+· `StatisticalSimulators/`: **The Module Hub**. This directory contains the individual simulator projects. Each folder here represents a distinct simulation tool.
 
-- **`categorias/`**  
-  Contiene las categorías de las apps.  
-  Si se añade una categoría, también debe añadirse en `index.qmd`.
+· `_site/`: The fully rendered static website (automated output).
 
-- **`renv/`**  
-  Entorno de R del proyecto (no tocar manualmente).
+· `index.qmd`: The homepage source configuration.
 
-- **`simuladores/`**  
-  **Carpeta de trabajo real.**  
-  Cada simulador vive dentro de su propia carpeta.
+· `renv/:` The project-level R environment management.
 
----
+------------------------------------------------------------------------
 
-## 🧱 Crear un nuevo simulador
+## 🧱 Adding a new Simulator to the Website
 
-1. Duplicar la carpeta `template/` dentro de `simuladores/`  
-2. Renombrar la carpeta por `/nombre_de_tu_carpeta/` (ej.: `ttest`)
+Simulators are essentially modular units within this website. To add a new one:
 
-### Editar la información de la app
+1.  **Scaffold the Module**
 
-Dentro de tu carpeta renombrada:
+      1.1. Navigate to the `StatisticalSimulators/` directory.
 
-- Abrir `index.qmd`
-- Cambiar:
-  - Título
-  - Descripción
-  - Categoría
-  - Imagen
-  - En el `iframe`.
-    Reemplazar la Ruta donde aparece `/template/` → reemplazar por `/nombre_de_tu_carpeta/`
-    Reemplazar el título del iframe
-    
----
+      1.2 Duplicate the `template/` folder.
 
-## 🖥 Crear la aplicación Shiny
+      1.3 Rename the folder (e.g., `ttest`).
 
-1. Entrar en la carpeta `appr/`  
-2. Editar el archivo `app.R` (ya incluye una plantilla básica de Shiny)
+2.  **Configure Metadata**
 
-### Instalar dependencias antes de desarrollar
+Open the `index.qmd` file inside your new simulator folder and update:
 
-1. Abrir `app.R`
-2. En la **consola de R** (no en terminal), ejecutar:
+-   **Title, Description, Category, Image**.
 
-```r
+-   **Iframe Path**: Update the source path from `/template/` to your new folder name (e.g., `/ttest/`).
+
+### 🖥 Developing your new Simulator
+
+Navigate to your module's source (e.g., `StatisticalSimulators/ttest/appr/`) and open app.R.
+
+**Environment Setup**
+
+Before editing the R code, ensure the environment is synced by running this in the R Console:
+
+``` r
 renv::restore()
 renv::activate()
+
+# Install compilation tools if missing
+install.packages(c("shinylive", "S7", "munsell", "shiny"))
 ```
 
-3. Instalar paquetes faltantes cuando RStudio lo pida.
-4. Instalar manualmente los siguientes:
+*Tip: You can develop standard Shiny code here. Use Run App in RStudio to test logic interactively.*
 
-```r
-install.packages("shinylive")
-install.packages("S7")
-install.packages("munsell")
-```
+## 🌐 Compiling your Simulator and WebAssembly Export
 
-5. Verificar que Shiny funciona ejecutando la aplicación:  
-   RStudio → **Run App**
+To integrate the simulator into the static website, it must be compiled from R to WebAssembly using `shinylive`.
 
-Si falla, instalar Shiny manualmente:
+**Run in R Console:**
 
-```r
-install.packages("shiny")
-```
-
-Ahora ya podemos desarrollar nuestra app realizando cambios en app.R y la podremos probar usando **Run App**.
-También podríamos ir desarrollando nuestra app.R desde otro proyecto y después seguir el proceso descrito en este documento para añadir esa nueva app a la web.
-
----
-
-## 🌐 Compilar la app a ShinyLive (WebAssembly)
-
-Cuando uno quiera compilar la app de shiny para la web ha de utilizar el siguiente comando:
-
-```r
+``` r
 shinylive::export(
-  "./simuladores/nombre_carpeta_mi_app/appr",
-  "./simuladores/nombre_carpeta_mi_app/appsite"
+  "./StatisticalSimulators/your_module_name/appr",   # Source R Code
+  "./StatisticalSimulators/your_module_name/appsite" # Compiled WebAssembly
 )
 ```
 
-Ejemplo:
+*Example:*
 
-```r
-shinylive::export("./simuladores/template/appr", "./simuladores/template/appsite")
+``` r
+shinylive::export("./StatisticalSimulators/template/appr", "./StatisticalSimulators/template/appsite")
 ```
 
-Si la exportación es exitosa, R sugerirá ejecutar:
+Once exported, you can verify the standalone build:
 
-```r
-httpuv::runStaticServer("./simuladores/nombre_carpeta_mi_app/appsite")
+``` r
+httpuv::runStaticServer("./StatisticalSimulators/your_module_name/appsite")
 ```
 
-Esto abrirá un HTML local con la app compilada en WebAssembly.
+## 🧱 Build the Full Website
 
----
+After the simulator module is compiled, you must rebuild the Quarto website wrapper to include the new content.
 
-## 🔄 Flujo de trabajo recomendado
+### Run in Terminal::
 
-Mientras desarrollas:
-
-- Usa **Run App** para probar la app en Shiny.
-- Compila a **ShinyLive** cada vez que añadas librerías nuevas o funciones complejas.
-
----
-
-## 🧱 Compilar la web de Quarto
-
-Una vez hayamos acabado de desarrollar nuestra nueva shiny app y la hayamos compilado en shinylive, hemos de regenerar la web:
-
-### Ejecutar en el **Terminal** (no en consola R):
-
-```bash
+``` bash
 quarto render
 ```
 
----
+------------------------------------------------------------------------
 
-## 🧼 Uso de Git: cómo evitar pisarse cambios
+## ⬆️ Deployment & Git
 
-### Antes de trabajar en una nueva app
+We use a standard version control flow to manage the website and its content.
 
-En el **Terminal de R**:
+### 1. Update Local Repo:
 
-```bash
+``` bash
 git pull
 ```
 
-Así aseguras que tienes los cambios de los demás.
+### 2. Stage Changes:
 
----
-
-## ⬆️ Subir tus cambios a GitHub
-
-Finalmente, si ya hemos creado la app, compilado a shinylive y regenerado la web quarto, podemos subir los cambios a Github.
-
-### 1. Comprobar que Git está instalado
-
-En el **Terminal de R**:
-
-```bash
-git
-```
-
-### 2. Ver la rama actual
-
-```bash
-git branch
-```
-
-Debe ser `main`.
-
-### 3. Añadir los cambios
-
-#### a) Si has creado/modificado solo tu app:
-
-```bash
+``` bash
 git add .
 ```
 
-#### b) Si has añadido librerías nuevas en R:
+### 3. Commit and Push:
 
-```r
-renv::snapshot()
-```
-
-Luego:
-
-```bash
-git add .
-```
-
-### 4. Crear el commit
-
-```bash
-git commit -m "Descripción clara de lo que se hizo"
-```
-
-### 5. Comprobar si otros han subido cambios
-
-```bash
-git pull
-```
-
-- Si hay conflictos, Git lo indicará.
-- Si no, continúa.
-
-### 6. Subir tus cambios
-
-```bash
+``` bash
+git commit -m "Integrated new simulator: T-Test"
 git push
 ```
 
----
+------------------------------------------------------------------------
 
-## 📌 Resumen rápido de comandos útiles
+## 📌 Command Summary Cheat Sheet
 
-```
-# Antes de trabajar
+```         
+# --- START SESSION ---
 git pull
 
-# Duplicar la carpeta template en ./simuladores/ para empezar a trabajar a desarrollar shinyapp en app.R
-# Editar index.qmd
-```
-```
-# Al acabar de trabajar con la shinyapp
-shinylive::export("./simuladores/template/appr", "./simuladores/template/appsite")
-```
-```
-# Al ir a subir cambios a git
+# --- COMPILE SIMULATOR (R Console) ---
+shinylive::export("./StatisticalSimulators/my_sim/appr", "./StatisticalSimulators/my_sim/appsite")
+
+# --- BUILD WEBSITE (Terminal) ---
 quarto render
 
-# Añadir cambios
+# --- DEPLOY (Terminal) ---
 git add .
-
-# Guardar cambios
-git commit -m "Descripción"
-
-# Asegurar que no hay cambios nuevos en remoto
-git pull
-
-# Subir cambios a GitHub
+git commit -m "Update website content"
 git push
 ```
 
+## 🌍 Hosting
 
-## 🌍 Hosting al mundo
+This repository is designed to be hosted on any static web hosting service (GitHub Pages, Netlify, Plesk, etc.).
 
-Este repositorio está diseñado para ser automáticamente hosteado como un sitio web estático, sin necesidad de un servidor que ejecute R. 
-
-Es decir, este repositorio ya te sirve como app ya compilada en WebAssembly funciona igual que un HTML normal. Solo queda hacerla accesible al mundo, dandole un dominio.
-
-Para publicar tu web:
-
-1. Ve a tu servicio de hosting de webs estáticas favorito (GitHub Pages, Netlify, Plesk, etc.).
-
-2. Añade este repositorio como fuente de archivos.
-
-3. Configura la rama a publicar (por ejemplo main).
-
-Una vez publicado, tu sitio web estará disponible públicamente y podrás compartir tu app.
-
-Ahora, cualquier persona podrá acceder a tus simuladores desde un navegador sin necesidad de instalar R ni dependencias adicionales.
+Because the R logic is pre-compiled to WebAssembly, no specialized R server (like Shiny Server or RStudio Connect) is required. The entire site is just HTML, CSS, and JS, making it robust, fast, and easy to scale.

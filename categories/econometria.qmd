@@ -1,11 +1,11 @@
 ---
-title: "Estadística descriptiva"
+title: "Econometría"
 page-layout: full
 listing:
-  contents: ../simuladores/**/*.qmd
+  contents: ../StatisticalSimulators/**/*.qmd
   type: grid
   include:
-    categories: "Estadística descriptiva"
+    categories: "Econometría"
   sort: "date desc"
   grid-columns: 3
   image-placeholder: ../assets/placeholder.png

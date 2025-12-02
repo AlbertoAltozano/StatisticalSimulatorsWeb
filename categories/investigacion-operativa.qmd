@@ -1,11 +1,11 @@
 ---
-title: "Distribuciones"
+title: "Investigación Operativa"
 page-layout: full
 listing:
-  contents: ../simuladores/**/*.qmd
+  contents: ../StatisticalSimulators/**/*.qmd
   type: grid
   include:
-    categories: "Distribuciones"
+    categories: "Investigación Operativa"
   sort: "date desc"
   grid-columns: 3
   image-placeholder: ../assets/placeholder.png

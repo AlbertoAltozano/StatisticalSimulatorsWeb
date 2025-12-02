@@ -6,7 +6,7 @@ format:
 listing:
   - id: grid-desc
     contents:
-      - "simuladores/**/index.qmd"
+      - "StatisticalSimulators/**/index.qmd"
     type: grid
     include:
       categories: "Estadística descriptiva"
@@ -16,7 +16,7 @@ listing:
 
   - id: grid-dist
     contents:
-      - "simuladores/**/index.qmd"
+      - "StatisticalSimulators/**/index.qmd"
     type: grid
     include:
       categories: "Distribuciones"
@@ -26,7 +26,7 @@ listing:
 
   - id: grid-inf
     contents:
-      - "simuladores/**/index.qmd"
+      - "StatisticalSimulators/**/index.qmd"
     type: grid
     include:
       categories: "Estadística inferencial"
@@ -36,7 +36,7 @@ listing:
 
   - id: grid-econ
     contents:
-      - "simuladores/**/index.qmd"
+      - "StatisticalSimulators/**/index.qmd"
     type: grid
     include:
       categories: "Econometría"
@@ -46,7 +46,7 @@ listing:
 
   - id: grid-io
     contents:
-      - "simuladores/**/index.qmd"
+      - "StatisticalSimulators/**/index.qmd"
     type: grid
     include:
       categories: "Investigación Operativa"

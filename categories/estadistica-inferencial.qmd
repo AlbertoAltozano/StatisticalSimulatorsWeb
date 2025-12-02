@@ -2,7 +2,7 @@
 title: "Estadística inferencial"
 page-layout: full
 listing:
-  contents: ../simuladores/**/*.qmd
+  contents: ../StatisticalSimulators/**/*.qmd
   type: grid
   include:
     categories: "Estadística inferencial"

@@ -1,11 +1,11 @@
 ---
-title: "Investigación Operativa"
+title: "Estadística descriptiva"
 page-layout: full
 listing:
-  contents: ../simuladores/**/*.qmd
+  contents: ../StatisticalSimulators/**/*.qmd
   type: grid
   include:
-    categories: "Investigación Operativa"
+    categories: "Estadística descriptiva"
   sort: "date desc"
   grid-columns: 3
   image-placeholder: ../assets/placeholder.png

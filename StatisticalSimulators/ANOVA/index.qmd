@@ -7,7 +7,7 @@ image: anova.png
 ---
 
 ::: {style="height: calc(80vh - 250px);"}
-<iframe src="https://virtualpatients.webs.upv.es/simuladores/ANOVA/appsite" title="ANOVA Unifactorial App" style="position: absolute; top: 250; left: 0; width: 100%; height: 80%; border: 0;" loading="lazy">
+<iframe src="https://virtualpatients.webs.upv.es/StatisticalSimulators/ANOVA/appsite" title="ANOVA Unifactorial App" style="position: absolute; top: 250; left: 0; width: 100%; height: 80%; border: 0;" loading="lazy">
 
 </iframe>
 :::
