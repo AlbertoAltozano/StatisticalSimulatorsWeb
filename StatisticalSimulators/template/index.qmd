@@ -8,7 +8,7 @@ image: template.png
 
 **Description**
 
-Esto es una plantilla para general nuevos simuladores
+Esto es una plantilla para generar nuevos simuladores
 
 **Authors**
 
