@@ -1,0 +1,23 @@
+---
+title: "Histogramas Y Gráficos de Cajas y Bigotes"
+description: "Genera gráficos para visualizar una población."
+date: 2026-10-02
+categories: ["Estadística descriptiva"]
+image: MatrizGraficosParam.png
+---
+
+**Description**
+
+Esta aplicación de Shiny le ayuda a explorar y comprender una muestra de datos a través de cuatro vistas complementarias: Histograma, Diagrama de caja (Boxplot), Gráfico de probabilidad normal (Q-Q plot), y estadísticos muestrales básicos
+
+**Authors**
+
+Vicente Chirivella González
+
+**APP**
+
+::: {style="margin-top: 20px; display: flex; gap: 10px;"}
+<a href="https://github.com/STATIO-UPV/StatisticalSimulators/tree/main/MatrizGraficosParam" target="_blank" class="btn btn-outline-secondary"> <i class="bi bi-github"></i> Source Code </a>
+
+<a href="simulator.html" class="btn btn-primary"> Go to Application <i class="bi bi-arrow-right-short"></i> </a>
+:::
