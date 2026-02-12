@@ -1,0 +1,27 @@
+---
+title: "Gráficos Q-Q en Poblaciones Mixtas"
+description: "Visualiza cómo la mezcla de múltiples poblaciones normales altera el gráfico de probabilidad normal"
+date: 2026-10-02
+categories: ["Estadística inferencial"]
+image: TCL.png
+---
+
+**Description**
+
+Esta aplicación permite explorar cómo se comporta un gráfico de probabilidad normal (Q-Q plot) cuando los datos provienen de una mezcla de varias poblaciones normales en lugar de una sola.
+
+La herramienta ayuda a detectar visualmente la heterogeneidad, la presencia de subgrupos, patrones de curvatura y valores atípicos mediante la generación dinámica y combinación de hasta tres muestras normales con parámetros ajustables (media, desviación típica y tamaño).
+
+Al modificar estos parámetros en tiempo real, podrá comprender mejor cómo las poblaciones mixtas afectan la forma del gráfico normal y aprenderá a interpretar distribuciones de datos complejas.
+
+**Authors**
+
+Vicente Chirivella González
+
+**APP**
+
+::: {style="margin-top: 20px; display: flex; gap: 10px;"}
+<a href="https://github.com/STATIO-UPV/StatisticalSimulators/tree/main/PapelNormalMezcla" target="_blank" class="btn btn-outline-secondary"> <i class="bi bi-github"></i> Source Code </a>
+
+<a href="simulator.html" class="btn btn-primary"> Go to Application <i class="bi bi-arrow-right-short"></i> </a>
+:::
