@@ -7,7 +7,7 @@ sidebar: false
 
 ```{=html}
 <iframe 
-  src="https://statio.webs.upv.es/StatisticalSimulators/TCL/PapelNormalMezcla" 
+  src="https://statio.webs.upv.es/StatisticalSimulators/PapelNormalMezcla/appsite" 
   title="Regresión" 
   style="width: 100%; height: calc(100vh - 65px); border: none; display: block;" 
   loading="lazy">
