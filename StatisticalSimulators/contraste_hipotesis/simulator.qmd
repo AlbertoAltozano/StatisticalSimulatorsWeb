@@ -1,5 +1,5 @@
 ---
-pagetitle: "Gráficos Q-Q en Poblaciones Mixtas"
+pagetitle: "Contraste de Hipótesis"
 page-layout: custom
 title-block-style: none
 sidebar: false
@@ -7,8 +7,8 @@ sidebar: false
 
 ```{=html}
 <iframe 
-  src="https://statio.webs.upv.es/StatisticalSimulators/PapelNormalMezcla/appsite" 
-  title="Regresión" 
+  src="https://statio.webs.upv.es/StatisticalSimulators/contraste_hipotesis/appsite" 
+  title="Contraste de Hipótesis" 
   style="width: 100%; height: calc(100vh - 65px); border: none; display: block;" 
   loading="lazy">
 </iframe>
