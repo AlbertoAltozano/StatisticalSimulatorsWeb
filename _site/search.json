@@ -39,7 +39,7 @@
     "href": "index.html#investigación-operativa",
     "title": "STATIO",
     "section": "Investigación Operativa",
-    "text": "Investigación Operativa\n\n\n\n\nNo matching items"
+    "text": "Investigación Operativa\n\n\n\n\n\n\n\n\n\n\nGraphical method - Linear Programming\n\n\nAplicación docente para resolver problemas de Programación Lineal con dos variables mediante el método gráfico, analizando restricciones, región factible y función objetivo.\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "categories/estadistica-inferencial.html",
@@ -88,7 +88,7 @@
     "href": "categories/investigacion-operativa.html",
     "title": "Investigación Operativa",
     "section": "",
-    "text": "No matching items"
+    "text": "Graphical method - Linear Programming\n\n\n\nInvestigación Operativa\n\n\n\nAplicación docente para resolver problemas de Programación Lineal con dos variables mediante el método gráfico, analizando restricciones, región factible y función objetivo.\n\n\n\n\n\n\nFeb 16, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "StatisticalSimulators/ANOVA/index.html",
@@ -124,6 +124,13 @@
     "title": "Histogramas Y Gráficos de Cajas y Bigotes",
     "section": "",
     "text": "Description\nEsta aplicación de Shiny le ayuda a explorar y comprender una muestra de datos a través de cuatro vistas complementarias: Histograma, Diagrama de caja (Boxplot), Gráfico de probabilidad normal (Q-Q plot), y estadísticos muestrales básicos\nAuthors\nVicente Chirivella González\nAPP\n\n  Source Code \n Go to Application"
+  },
+  {
+    "objectID": "StatisticalSimulators/MetodoGrafico/index.html",
+    "href": "StatisticalSimulators/MetodoGrafico/index.html",
+    "title": "Graphical method - Linear Programming",
+    "section": "",
+    "text": "Description\nAplicación docente para resolver problemas de Programación Lineal con dos variables mediante el método gráfico, analizando restricciones, región factible y función objetivo\nAuthors\nAdrián Colomer Granero, Vicent Giner Bosch\nAPP\n\n  Source Code \n Go to Application"
   },
   {
     "objectID": "StatisticalSimulators/PapelNormalMezcla/index.html",

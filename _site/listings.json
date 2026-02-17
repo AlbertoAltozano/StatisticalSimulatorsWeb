@@ -9,7 +9,8 @@
       "/StatisticalSimulators/TCL/index.html",
       "/StatisticalSimulators/contraste_hipotesis/index.html",
       "/StatisticalSimulators/ANOVA/index.html",
-      "/StatisticalSimulators/ARIMA/index.html"
+      "/StatisticalSimulators/ARIMA/index.html",
+      "/StatisticalSimulators/MetodoGrafico/index.html"
     ]
   },
   {
@@ -41,6 +42,8 @@
   },
   {
     "listing": "/categories/investigacion-operativa.html",
-    "items": []
+    "items": [
+      "/StatisticalSimulators/MetodoGrafico/index.html"
+    ]
   }
 ]
