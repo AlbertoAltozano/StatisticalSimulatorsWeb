@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/StatisticalSimulators/MatrizGraficosParam/index.html",
+      "/StatisticalSimulators/Distributions/index.html",
       "/StatisticalSimulators/DistrMedia/index.html",
       "/StatisticalSimulators/PapelNormalMezcla/index.html",
       "/StatisticalSimulators/REGRESSION/index.html",
@@ -37,7 +38,8 @@
   {
     "listing": "/categories/estadistica-descriptiva.html",
     "items": [
-      "/StatisticalSimulators/MatrizGraficosParam/index.html"
+      "/StatisticalSimulators/MatrizGraficosParam/index.html",
+      "/StatisticalSimulators/Distributions/index.html"
     ]
   },
   {

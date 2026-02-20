@@ -1,0 +1,15 @@
+---
+pagetitle: "Distributions"
+page-layout: custom
+title-block-style: none
+sidebar: false
+---
+
+```{=html}
+<iframe 
+  src="https://statio.webs.upv.es/StatisticalSimulators/Distributions/appsite" 
+  title="Statistic Distributions App" 
+  style="width: 100%; height: calc(100vh - 65px); border: none; display: block;" 
+  loading="lazy">
+</iframe>
+```
